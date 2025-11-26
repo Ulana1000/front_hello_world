@@ -24,3 +24,57 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: radial-gradient(circle at 20% 20%, #080c18, #04060c 55%, #020309);
+  color: #e5e7eb;
+  min-height: 100vh;
+}
+
+@layer utilities {
+  .text-glow {
+    text-shadow: 0 10px 40px rgba(255, 255, 255, 0.25);
+  }
+
+  .animate-blob {
+    animation: blob 24s ease-in-out infinite;
+  }
+
+  .animate-blob-fast {
+    animation: blob 16s ease-in-out infinite;
+  }
+
+  .animate-drip {
+    animation: drip 7s ease-in-out infinite;
+  }
+}
+
+@keyframes blob {
+  0%,
+  100% {
+    transform: translate(0px, 0px) scale(1);
+  }
+  25% {
+    transform: translate(12px, -10px) scale(1.04);
+  }
+  50% {
+    transform: translate(-14px, 16px) scale(0.98);
+  }
+  75% {
+    transform: translate(8px, 14px) scale(1.03);
+  }
+}
+
+@keyframes drip {
+  0%,
+  100% {
+    transform: translateY(-6px) scaleY(1);
+  }
+  50% {
+    transform: translateY(6px) scaleY(1.06);
+  }
+}
