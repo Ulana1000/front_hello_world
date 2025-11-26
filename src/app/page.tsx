@@ -86,7 +86,7 @@ export default function Home() {
         <div className="w-full max-w-5xl space-y-10">
           <div className="flex flex-wrap items-center gap-3">
             <span className="rounded-full border border-white/15 bg-white/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.35em] text-white/70">
-              hello world
+              hello world !!!!
             </span>
             <button
               type="button"
