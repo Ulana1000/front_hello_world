@@ -133,7 +133,7 @@ export default function Home() {
                   WebkitTextFillColor: "transparent",
                 }}
               >
-                Hello, world.
+                解決
               </h1>
               <p className="max-w-2xl text-lg leading-relaxed text-white/80">
                 次世代の{" "}
